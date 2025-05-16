@@ -19,10 +19,10 @@ if not os.path.exists(log_file):
         writer.writerow(["Phone Number", "Message", "Scheduled Time", "Call SID"])
 
 # Twilio credentials (replace with your real values)
-account_sid = 'AC3215504ab9f01aed383360c64ceb7303'
-auth_token = '63685cfe6fb5cb07947a587e74ea3127'
-twilio_number = '+12179553121'
-to = '+91 7389600475'
+account_sid = 'YOUR_ACCOUNT_SID'
+auth_token = 'YOUR_AUTH_TOKEN'
+twilio_number = '+YOUR_TWILIO_NUMBER'
+to = 'to_receipint_number'
 client = Client(account_sid, auth_token)
 
 def make_call(to_number, message):
