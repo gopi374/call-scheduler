@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Call Logs</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color:rgb(239, 236, 42); }
+  </style>
+</head>
+<body>
+  <h2>Call Logs</h2>
+  <table>
+    <tr>
+      {% for col in logs[0] %}
+        <th>{{ col }}</th>
+      {% endfor %}
+    </tr>
+    {% for row in logs[1:] %}
+      <tr>
+        {% for cell in row %}
+          <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
