@@ -39,7 +39,7 @@ automated-calling-agent/
 ⚙️ Setup Instructions
 
 ### 1. Clone the repository
-git clone https://github.com/your-username/automated-calling-agent.git
+git clone https://github.com/gopi374/automated-calling-agent.git
 cd automated-calling-agent
 
 2. Install required Python packages
@@ -60,3 +60,27 @@ To receive Twilio webhooks, use ngrok:
 Replace the TwiML URL in your code like this:
 url = 'https://your-ngrok-url.ngrok.io/voice'
 📄 Example TwiML for Custom Voice Message
+<Response>
+  <Say voice="alice" language="hi-IN">नमस्ते! यह एक स्वचालित कॉल है।</Say>
+</Response>
+
+📋 Call Logging
+All calls are logged in call_logs.csv with:
+
+Phone Number
+
+Message
+
+Scheduled Time
+
+Call SID (unique ID from Twilio)
+
+🧾 License
+This project is licensed under the MIT License. You’re free to use, modify, and distribute it.
+Made with ❤️ by Gopi Banjara
+Email: gopibanjara87@gmail.com
+GitHub: https://github.com/gopi374
+
+---
+
+Let me know if you want me to auto-fill the author name or GitHub URL from your profile!
